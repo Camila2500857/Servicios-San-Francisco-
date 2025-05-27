@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Control de Toneladas - Cantera</title>
+<link rel="stylesheet" href="css/style.css" />
+<script src="java/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Registrar Carga</h2>
+        <div id="reader"></div><br>
+
+        <form id="formulario">
+
+            <input type="date" id="fecha" placeholder="Fecha" required><br>
+            <input type="text" id="chofer" placeholder="Nombre del Chofer" required><br>
+            <input type="text" id="remito" placeholder="Número de Remito" required><br>
+            <input type="text" id="ordenCompra" placeholder="N° Orden de Compra" required><br>
+            <input type="text" id="hojaRuta" placeholder="Hoja de Ruta" required><br>
+            <input type="number" id="tonelada" placeholder="Cantidad de Toneladas" required><br>
+            <input type="text" id="patenteTractor" placeholder="Patente del Tractor" required><br>
+            <input type="text" id="patenteChasis" placeholder="Patente del Chasis" required><br>
+            <select id="destino" required>
+                <option value="">Destino</option>
+                <option value="Acopio">Acopio</option>
+                <option value="Loma Negra">Planta de Loma Negra</option>
+            </select><br>
+            <button type="button" onclick="guardarDatos()">Guardar</button>
+        </form>
+    </div>
+
+    <script src="java/script.js"></script>
+</body>
+</html>
